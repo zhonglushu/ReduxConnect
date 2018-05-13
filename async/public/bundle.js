@@ -5424,9 +5424,7 @@ function receivePosts(subreddit, json) {
     return {
         type: RECEIVE_POSTS,
         subreddit: subreddit,
-        posts: json.data.children.map(function (child) {
-            return child.data;
-        }),
+        posts: json.data.child.map(), //json.data.children.map(child => child.data)
         receivedAt: Date.now()
     };
 }
