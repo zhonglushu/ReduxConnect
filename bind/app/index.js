@@ -5,8 +5,10 @@ import LeftContainer from "./container/LeftContainer";
 import RightContainer from "./container/RightContainer";
 import {Provider} from "react-redux";
 import Reducer from "./reducers/Reducer";
+import Test from "./test/test";
 
 function PageContent() {
+    Test();
     return (<div>
         <LeftContainer />
         <RightContainer />

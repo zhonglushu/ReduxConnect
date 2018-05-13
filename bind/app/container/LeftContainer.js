@@ -7,9 +7,9 @@ const mapStateToProps = (state) => ({
 
 });
 
-const mapDispatchToProps = {
+const mapDispatchToProps = ({
     showFunc: ShowAction
-};
+});
 
 const lcComponent = connect(
     mapStateToProps,
